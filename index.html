@@ -5,24 +5,34 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Welcome to Gabin's Web</title>
+    <link rel="stylesheet" href="./css/w3.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    
     <style>
-        *{font-family: "맑은 고딕" verdana}
+        body{width: 980px; margin: 0 auto;}
        
+        *{font-family: "맑은 고딕" verdana, Arial, Helvetica, sans-serif; line-height: 120%;}
+
         header>img{
             display: block; margin: 0px auto;
             height: 75px;}
-        ul{list-style: none;}
+
+        li{list-style: none;}   
+        ul{list-style: none;} 
         a{text-decoration: none;}
+
         header>h1{
             text-align: center;
             letter-spacing: 2px;
-            font-size: 35px;}
+            font-size: 40px;
+            font-weight: 600;}
 
-        nav>ul{
+            nav>ul{
             text-align: center;
-            border-top: 2px solid gray;
-            border-bottom: 2px solid gray;
-            padding: 15px 10px;}
+            border-top: 3px solid gray;
+            border-bottom: 3px solid gray;
+            padding: 10x 5px;}
+
         nav>ul>li{
             display: inline;
             padding: 16px 90px;
@@ -36,86 +46,152 @@
 
         section>div>img{display: block; margin: 0px auto;}
 
-        table{border-collapse: collapse; border: gray;}
+        table{border: 2px solid gray;}
+
     </style>
+
+
 
 </head>
 <body>
     <header>
         <img src="./images/logo.jpg" alt="">
         <h1>GABIN SITE</h1>
+    
     </header>
     <nav>
-        <ul>
-            <li><a href="#about">About</a></li>
-            <li><a href="#profile">Profile</a></li>
-            <li><a href="#portfolio">Portfolio</a></li>
-            <li><a href="#contact">Contact</a></li>
+        <ul class="w3-bar w3-Light Gray w3-center">
+            <li class="w3-bar-item w3-button w3-padding-large"><a href="#about">About</a></li>
+            <li class="w3-bar-item w3-button w3-padding-large"><a href="#profile">Profile</a></li>
+            <li class="w3-bar-item w3-button w3-padding-large"><a href="#portfolio">Portfolio</a></li>
+            <li class="w3-bar-item w3-button w3-padding-large"><a href="#contact">Contact</a></li>
         </ul>
     </nav>
-    <section>
-        <div id="photo">
+    
+    <section class="w3-left w3-container" style="width: 70%">
+        <article class="media w3-large  w3-margin-top" ><h3>GABIN SITE PHOTO</h3></article>
             <img src="./images/myPhoto.jpg" alt="myPhoto">
         <br>
-        <h2> 좋아하는 오디오</h2>
-        <audio controls autoplay loop src="./media/music_BERRY.mp3"></audio>
-        <h2> 고양이를 좋아합니다</h2>
-        <video width="50%" height="50%" controls autoplay loop src="./media/movie_cat.mp4"></video>
+        <article class="media w3-large  w3-margin-top">
+            <h3>GABIN SITE BGM</h3>
+                <audio src="./media/music_BERRY.mp3" autoplay="True" controls loop></audio>
+        <article class="media w3-large  w3-margin-top">
+            <div id="about">
+                <h3>LOVE CAT</h3>
+                <video class="w3-col m8 w3-border" src="./media/movie_cat.mp4" autoplay="True" controls></video>
+            
+            <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+            
+                <h3>LOVE PAINTING</h3>
+                <img class="w3-col m4 w3-border w3-margin-right" src="media/p1.jpg" alt="myPainting1" />
+                <img class="w3-col s4 w3-border" src="media/p2.jpg" alt="myPainting2" />
+            <br>
+                <img class="w3-col s4 w3-border w3-margin-right w3-margin-top w3-margin-bottom" src="media/p3.jpg" alt="myPainting3" />
+                <img class="w3-col s4 w3-border w3-margin-right w3-margin-top w3-margin-bottom" src="media/p4.jpg" alt="myPainting4" />
+        </div>
+        </article>
+
         <hr>
-        <iframe width="560" height="315" src="https://www.youtube.com/embed/QIN5_tJRiyY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        <iframe class="w3-col m10 w3-border w3-margin-top w3-margin-bottom" src="https://www.youtube.com/embed/QIN5_tJRiyY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
         <hr>
-        <iframe src="./start.html" frameborder="0" width="70%" height="240px">
+        
+        <iframe class="w3-margin-top w3-margin-bottom" src="./start.html" frameborder="0" width="70%" height="240px">
             지원되지 않는 브라우저입니다
         </iframe>
         </div>
-        <div id="profile">
-            <h2>Gabin Profile</h2>
-            <table border="1">
-                <tr>
-                    <th>일자</th>
-                    <th>내용</th>
-                    <th>구분</th>
+
+        <article class="w3-large  w3-margin-top w3-margin-bottom w3-large">
+            <div id="profile">
+                <h2>Gabin Profile</h2>
+                <table class="w3-table-all w3-hoverable">
+                    <tr>
+                        <th>일자</th>
+                        <th>내용</th>
+                        <th>구분</th>
+                    </tr>
+                    <tr>
+                        <td>NOW</td>
+                        <td>동아대학교 경영정보학과 재학</td>
+                        <td>2학년</td>
+                    </tr>
+                    <tr>
+                        <td>21.03~21.07</td>
+                        <td>동아대학교 마케팅 동아리 SYNERGY</td>
+                        <td>활동</td>
+                    </tr>
+                    <tr>
+                        <td>21.09~21.12</td>
+                        <td>동아대학교 마케팅 동아리 SYNERGY</td>
+                        <td>운영</td>
+                    </tr>
+                    <tr>
+                        <td>21.08</td>
+                        <td>컴퓨터활용능력 1급</td>
+                        <td>필기</td>
                 </tr>
-                <tr>
-                    <td>현재</td>
-                    <td>동아대학교 경영정보학과 재학</td>
-                    <td>2학년</td>
-                </tr>
-                <tr>
-                    <td>21.03~21.07</td>
-                    <td>동아대학교 마케팅 동아리 SYNERGY</td>
-                    <td>활동</td>
-                </tr>
-                <tr>
-                    <td>21.09~21.12</td>
-                    <td>동아대학교 마케팅 동아리 SYNERGY</td>
-                    <td>운영</td>
-                </tr>
-                <tr>
-                    <td>21.08</td>
-                    <td>컴퓨터활용능력 1급</td>
-                    <td>필기</td>
-            </tr>
-            </table>
-        </div>
-        <br><br><br><br><br><br><br><br><br><br>
-    <div id="link">
-        <!-- 문서간의 이동  -->
-        <a href="http://www.donga.ac.kr" target="_blank">동아대학교</a><br>
-        <a href="http://www.naver.com" target="_self">네이버</a><br>
-        <a href="start.html">start페이지이동</a><br>
-        <!--  문서내 이동  -->
-        <a href="#photo">사진으로 이동</a>
-    </div>
-    <div id="login">
-        <form action="#" method="GET">
-            아이디 : <input type="text" name="name"><br>
-            비밀번호 : <input type="password" name="pass" id="pass"><br>
-            <input type="submit" value="확인">
-            <input type="reset" value="취소">
+                </table>
+            </div>
+    </section>
+
+    <aside class="right w3-margin-top">
+    <div class="login">
+        <form action="action_page.php" method="GET">
+            <div class="imgcontainer">
+            <h3> LOG IN </h3>
+            <div class="container">
+                <label for="ID"><b>ID :</b></label><br>
+                <input type="text" placeholder="Enter ID" name="uname" required>
+                <label for="psw"><b>PASSWORD :</b></label>
+                <input type="password" placeholder="Enter PW" name="psw" required>
+                <br>
+                <button type="submit">Submit</button>
+                <div class="container" style="background-color: white">
+                <button type="button" class="cancelbtn">Cancel</button>
+                <label>
+              </div>
         </form>
     </div>
-    </section>
-    <footer> &copy; Gabin</footer>
+    <br><br>
+    </aside>
+    <aside class="right w3-margin-top w3-large">
+    <div class="link">
+        <i class="fas fa-home" style="font-size: 30px;"></i>
+        <br>
+        <!-- 문서간의 이동  -->
+        <a href="http://www.donga.ac.kr" target="_blank">DAU</a><br>
+        <a href="http://www.naver.com" target="_self">NAVER</a><br>
+        <a href="start.html">START</a><br>
+        <!--  문서내 이동  -->
+    </div>
+    </aside>
+
+    <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+
+</article>
+
+<br><br><br><br><br><br><br><br><br><br>
+  
+
+
+
+<footer class="w3-dark-gray">
+    <div class="w3-row">
+        <div class="w3-col s4 w3-container">
+            <div id="contact">
+                <h5>CONTACT GABIN</h5>
+                <ul>
+                <li>Phone : 010 9211 6591</li>
+                <li>Email : <a href="https://mail.naver.com/write"> gabi0619@naver.com</li>
+                <li>GitHub : <a href="https://github.com/gaviscon-cloud"> gaviscon-cloud</li>
+                </ul>
+            </div>
+                <h5>FOLLOW GABIN</h5>
+                <script src="https://kit.fontawesome.com/55e36501ea.js" crossorigin="anonymous"></script>
+                <a href="https://www.instagram.com/gaviscon.kr/"><i class="fab fa-instagram" style="font-size : 30px; color : white"></i>
+            <br /><br />
+                &copy; Gabin 
+        </div>
+    </div>
+</footer>
 </body>
 </html>
